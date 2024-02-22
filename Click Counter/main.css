@@ -1,0 +1,86 @@
+.container {
+    font-family: arial;
+    font-size: 28px;
+    margin: 120px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(129, 129, 129);
+
+    height: 110px;
+    text-align: center; /* 페이지 중간 정렬 (창 사이즈에 따라 자동 조정) */
+}
+
+#print {
+    font-size: 100px;
+}
+
+
+/* 버튼 css */
+#decr {
+    background-color: rgb(48, 167, 240); /* 배경 색상*/
+    color: white;  /* 문자 색상*/
+    font-size: 17px; /* 문자 사이즈*/
+    width: 100px;
+    height: 40px;
+
+    border-radius: 10px; /* 버튼 테두리 모서리 */
+
+    border: 0; /* 버튼 테두리 선 */
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+
+}
+
+#decr:hover { /* 마우스 오버 시 버튼 색상 변경*/
+    background: orange;
+    color: white;
+
+    box-shadow: -3px -3px 3px rgb(172, 172, 172), 3px 3px 3px rgb(237, 237, 237);
+    /* 버튼 그림자 */
+    transition: 0.2s;
+    /* 그림자 효과 속도 */
+}
+
+#res {
+    background-color: rgb(48, 167, 240); /* 배경 색상*/
+    color: white;  /* 문자 색상*/
+    font-size: 17px; /* 문자 사이즈*/
+    width: 100px;
+    height: 40px;
+
+    border-radius: 10px; /* 버튼 테두리 모서리 */
+
+    border: 0; /* 버튼 테두리 선 */
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+}
+
+#res:hover { /* 마우스 오버 시 버튼 색상 변경*/
+    color: white;
+    background: orange;
+
+    box-shadow: -3px -3px 3px rgb(172, 172, 172), 3px 3px 3px rgb(237, 237, 237);
+    transition: 0.2s;
+}
+
+#incr {
+    background-color: rgb(48, 167, 240); /* 배경 색상*/
+    color: white;  /* 문자 색상*/
+    font-size: 17px; /* 문자 사이즈*/
+    width: 100px;
+    height: 40px;
+
+    border-radius: 10px; /* 버튼 테두리 모서리 */
+
+    border: 0; /* 버튼 테두리 선 */
+    cursor: pointer; /* 마우스 오버 시 커서 변경 */
+}
+
+#incr:hover { /* 마우스 오버 시 버튼 색상 변경*/
+    color: white;
+    background: orange;
+
+    box-shadow: -3px -3px 3px rgb(172, 172, 172), 3px 3px 3px rgb(237, 237, 237);
+    transition: 0.2s;
+}
+
+.center {
+    text-align: center
+}
