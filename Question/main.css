@@ -1,0 +1,90 @@
+#question {
+    color: #050505;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 360;
+
+    padding-top: 100px;
+    margin: -60px;
+}
+
+/* 버튼 */
+.btn { 
+    background-color: #ffffff;
+    color: #050505;
+
+    font-size: 16px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+
+    cursor: pointer;
+    padding: 30px;
+
+    width: 100%;
+
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    outline: none;
+    box-shadow: 1px 2px 1px rgb(172, 172, 172), 1px 1px 0px rgb(237, 237, 237);
+
+  }
+
+/* 버튼에 마우스 오버 시 색상 변경 */
+.btn:hover { 
+    background-color: #ededed;
+}
+
+/* 버튼 토글 */
+.show { 
+    display: block;
+}
+
+/* 내용 */
+.content {
+    background-color: white;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 13px;
+    text-align: center;
+
+    max-height: 0;
+    overflow: hidden;
+
+    box-shadow: 1px 2px 1px rgb(172, 172, 172), 1px 1px 0px rgb(237, 237, 237);
+    border-radius: 10px;
+    transition: max-height 0.2s ease-out;
+}
+
+  /* 버튼 위치 */
+  .container {
+    /* padding: top, right, bottom, left */
+    padding: 70px 50px 8px 50px;
+  }
+
+  .container2 {
+    padding: 20px 50px 20px 50px;
+  }
+
+  .container3 {
+    padding: 10px 50px 30px 50px;
+  }
+
+
+  /* 버튼 옆에 아이콘(+, -) */
+  .btn::after {
+    content: '\02795'; /* (+) 유니코드 */
+    font-size: 13px;
+    color: rgb(157, 23, 23);
+    float: right;
+    margin-left: 10px;
+  }
+  
+  .show::after {
+    content: "\2796"; /* (-) 아이콘 유니코드 */
+  }
