@@ -9,10 +9,23 @@
     text-align: center; /* 페이지 중간 정렬 (창 사이즈에 따라 자동 조정) */
 }
 
+/* 숫자 */
 #print {
-    font-size: 100px;
+    font-size: 97px;
 }
 
+/* 양수 색상 */
+.plus {
+    color: rgb(99, 86, 86);
+}
+/* 음수 색상 */
+.minus {
+    color: rgb(9, 128, 5);
+}
+
+.maincolor {
+    color: black;
+}
 
 /* 버튼 css */
 #decr {
