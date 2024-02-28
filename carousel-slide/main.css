@@ -14,12 +14,12 @@
 
 /* 제목 */
 #title {
-    font-family: "Nanum Myeongjo", serif;
-    font-weight: 500;
-    font-size: 40px;
+    font-family: "Noto Serif SC", serif;
+    font-size: 39px;
     text-align: center;
     
     padding: 10px;
+    margin-bottom: -10px;
 }
 
 /* 숫자 버튼 */
