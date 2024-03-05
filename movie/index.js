@@ -1,7 +1,4 @@
-
 window.addEventListener('scroll', function() {
-
-    console.log(window.scrollY);
 
     if (window.scrollY < 1100) {
         document.getElementById("img").src = "xiang1.png";
