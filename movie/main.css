@@ -1,0 +1,63 @@
+body {
+    font-family: "Noto Serif SC", serif;
+}
+
+/* 설명칸 */
+.white {
+    background-color: rgb(255, 255, 255);
+    height: 2600px;
+    margin-top: 250px;
+}
+
+/* 이미지 */
+.image {
+    float: right;
+    width: 690px;
+
+    margin-top: 180px;
+    margin-right: 10px;
+    position: sticky;
+    top: 150px; /* 어디에 고정할건지 (상단에) */
+}
+
+/* title */
+.title {
+
+    font-size: 45px;
+    text-align: center;
+    margin-top: 300px;
+}
+
+
+/* white - 제목 */
+.text {
+    font-size: 27px;
+    text-align: center;
+    margin-left: 95px;
+    margin-top: -300px;
+
+    float: left;
+    width: 500px;
+}
+
+/* 내용 */
+.content {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 45px;
+
+    float: left;
+    width: 630px;
+    margin-top: 300px;
+}
+
+/* 마지막 내용 */
+.last {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 45px;
+
+    float: left;
+    width: 630px;
+    margin-top: 400px;
+}
