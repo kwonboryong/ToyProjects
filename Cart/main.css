@@ -327,6 +327,7 @@ footer {
 }
 
 #priceDown {
+    font-family: "Gowun Batang", serif;
     margin-left: 40px;
     width: 110px;
     height: 40px;
@@ -344,6 +345,7 @@ footer {
 
 /* 2만원 이하 정렬 버튼 */
 #down-2 {
+    font-family: "Gowun Batang", serif;
     margin-left: 10px;
     margin-right: 42px;
     margin-bottom: 25px;
