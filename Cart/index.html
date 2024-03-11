@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <!-- 메뉴 -->
+    <header id="home">
+        <h1>Interior Store</h1>
+        <nav>
+          <span>
+            <a onClick="window.location.reload()" style="cursor: pointer;">Home</a>
+          </span>
+          <span>
+            <a>Store</a>
+          </span>
+        </nav>
+    </header>
+
+    <!-- 검색칸 -->
+    <form name="find"> <!-- 검색 결과 페이지: find.html -->
+      <input id="search" type="text" placeholder="상품을 검색하세요." onkeydown="javascript:if(event.keyCode == 13)searchList();">
+    </form>
+
+    <!-- 정렬 버튼 -->
+    <div class="arrayBtn">
+      <button id="priceDown">가격 내림차순</button>
+      <button id="down-2">2만원 이하</button>
+    </div>
+
+    <!-- 상품 카드 -->
+    <div class="card">
+    </div>
+
+    <!-- 모달창 -->
+    <div class="modal1">
+      <div class="modal2">
+        <h4 id="m-title">결제</h4>
+        <p id="modalText">성함</p>
+        <input type="text" class="m-input">
+        <p id="modalText">연락처</p>
+        <input type="text" class="m-input" oninput="autoHyphen2(this)">
+        <p></p>
+        <button class="modalBtn1" id="send">입력완료</button>
+        <button class="modalBtn2" id="close">닫기</button>
+      </div>
+    </div>
+
+    <!-- 영수증 모달 -->
+    <div class="modal2" id="receiptModal">
+      <div class="modal-content">
+          <span class="close" id="closeReceipt" style="cursor: pointer;">&times;</span>
+          <h2 id="rctTitle">영수증</h2>
+      </div>
+    </div>
+
+    <!-- 장바구니 -->
+    <div class="dragBox">
+      <p id="cart-tag">Cart</p>
+      <div class="dropBox" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    <!-- 최종 가격 -->
+    <div class="priceBox">
+      <h4>최종 금액</h4>
+      <p class="final-price"></p>
+      <button class="buy" id="buyBtn">Buy</button>
+    </div>
+
+    <!-- footer -->
+    <footer role="contentinfo">
+      <address>
+          © 웹 페이지 제작자
+          <a href="mailto:contact@example.com">kwonboryong@naver.com</a>
+      </address>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
