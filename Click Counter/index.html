@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="main.css" rel="stylesheet" />
+</head>
+<!--
+생성 - 변수, 함수, 버튼
+1. 초기 숫자는 0으로 띄움
+2. 증가 버튼을 누르면 1씩 증가(+= 1)
+3. 감소 버튼을 누르면 1씩 감소(-= 1), (음수 가능)
+4. 초기화 버튼을 누르면 0으로 셋팅 (초기 숫자와 같음)
+-->
+<body style="background-color: floralwhite">
+    <div class="container">
+        <h2>Counter</h2>
+        <span id="print">
+            0
+        </span>
+    </div>
+
+    <!--버튼-->
+    <div class="center">
+        <button onclick="decrease()" id="decr">Decrease</button>
+        <button onclick="reset()" id="res">Reset</button>
+        <button onclick="increase()" id="incr">increase</button>
+    </div>
+
+    <script src="main.js">
+    </script>
+</body>
+</html>

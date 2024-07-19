@@ -1,0 +1,120 @@
+.slide-container {
+    width: 300vw; 
+    transition: all 1s;
+}
+
+.slide-box {
+    width: 100vw;
+    float: left;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+/* 제목 */
+#title {
+    font-family: "Noto Serif SC", serif;
+    font-size: 39px;
+    text-align: center;
+    
+    padding: 10px;
+    margin-bottom: -10px;
+}
+
+/* 숫자 버튼 */
+.btn-slide {
+    text-align: center;
+    padding: 40px;
+}
+
+.slide-1 {
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+    font-size: 15px;
+
+    margin: 0px 5px 0px 10px;
+    width: 27px;
+    height: 25px;
+    border: none;
+    background-color: rgb(228, 234, 239);
+    box-shadow: 1px 2px 1px rgb(172, 172, 172), 1px 1px 0px rgb(237, 237, 237);
+}
+
+.slide-1:hover {
+    background-color: aliceblue;
+}
+
+.slide-2 {
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+    font-size: 15px;
+
+    margin: 0px 5px 0px 10px;
+    width: 27px;
+    height: 25px;
+    border: none;
+    background-color: rgb(228, 234, 239);
+    box-shadow: 1px 2px 1px rgb(172, 172, 172), 1px 1px 0px rgb(237, 237, 237);
+}
+
+.slide-2:hover {
+    background-color: aliceblue;
+}
+
+.slide-3 {
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+    font-size: 15px;
+
+    margin: 0px 5px 0px 10px;
+    width: 27px;
+    height: 25px;
+    border: none;
+    background-color: rgb(228, 234, 239);
+    box-shadow: 1px 2px 1px rgb(172, 172, 172), 1px 1px 0px rgb(237, 237, 237);
+}
+
+.slide-3:hover {
+    background-color: aliceblue;
+}
+
+/* 다음, 이전 버튼 */
+.btn-next {
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+}
+
+.next {
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+    font-size: 15px;
+
+    margin: 0px 5px 0px 10px;
+    width: 50px;
+    height: 27px;
+    border: none;
+    background-color: rgb(223, 238, 251);
+    box-shadow: 1px 2px 1px rgb(172, 172, 172), 1px 1px 0px rgb(237, 237, 237);
+}
+
+.next:hover {
+    background-color: aliceblue;
+}
+
+.before {
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+    font-size: 15px;
+
+    margin: 0px 10px 0px 5px;
+    width: 50px;
+    height: 27px;
+    border: none;
+    background-color: rgb(252, 235, 235);
+    box-shadow: 1px 2px 1px rgb(172, 172, 172), 1px 1px 0px rgb(237, 237, 237);
+}
+
+.before:hover {
+    background-color: aliceblue;
+}

@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    background-color: var(--bodybackground-color);
+    font-family: "Gowun Dodum", sans-serif;
+}
+
+
+/* a태그 밑줄 없애기 */
+a {text-decoration-line: none; color: rgb(187, 26, 5);}
+
+/* 스크롤 진행바 */
+.progress {
+    background-color: red;
+    padding: 1px;
+    width: 0%;
+    position: fixed;
+    z-index: 10;
+    transition: all 1s;
+    margin-top: -85px;
+}
+
+/* 상단바*/
+.menu {
+    width: 100%;
+    display: flex; /* 가로로 정렬 */
+    justify-content: space-between; /* 박스 간 간격 */
+
+    align-items: center; /* 가운데 정렬 */
+    background-color: antiquewhite;
+
+    height: 95px;
+    margin-top: -86px;
+    position: fixed; /* 스크롤 고정 */
+}
+
+/* 서브메뉴 - 그룹 */
+.list-group {
+    font-size: 18px;
+    list-style:none; /* 목록 점 없애기 */
+    display: flex; /* 가로로 정렬 */   
+    margin: 0 auto; /* 가운데 정렬*/
+    padding-left: 0;
+}  
+
+/* 서브메뉴 - 개인 */
+.list-item {
+    padding: 8px 70px; /* 메뉴 간 간격 */
+    cursor: pointer;
+}
+
+/* 메뉴 제목 */
+.title {
+    margin-top: 85px;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    width: auto;
+    font-size: 20px;
+    text-align: center;
+    display: grid;
+}
+
+/* 섹션 당 한 화면 보여주기 */
+.section {
+    height: 100vw;
+}
+
+/* 본문 - 작은 내용 */
+#a {
+    font-size: 20px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+/* 두 번째 본문 - 제목 */
+#untitle {
+    margin-top: 40px;
+
+}
+
+/* 메뉴 간격 조정 */
+#about {
+    padding-top: 2px;
+}
+
+#skills {
+    padding-top: 2px;
+}
+
+#projects {
+    padding-top: 2px;
+}
+
+#contact {
+    padding-top: 2px;
+}
+
+#me {color: rgb(240, 35, 25);}
+
+
+/* 프로필 사진 */
+.title img {
+    margin: 0 auto;
+}
+
+/* 벨로그, 깃허브 아이콘 */
+.iconabout {
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* 캐러셀 슬라이드 */
+.slide-container {
+    width: 300vw; 
+    transition: all 1s;
+}
+
+.slide-box {
+    width: 100vw;
+    float: left;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+/* 숫자 버튼 */
+.btn-slide {
+    text-align: center;
+    padding: 40px;
+}
+
+.slide-1, .slide-2, .slide-3 {
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+    font-size: 15px;
+
+    margin: 0px 5px 0px 10px;
+    width: 27px;
+    height: 25px;
+    border: none;
+    background-color: rgb(228, 234, 239);
+    box-shadow: 1px 2px 1px rgb(172, 172, 172), 1px 1px 0px rgb(237, 237, 237);
+}
+
+.slide-1:hover, .slide-2:hover, .slide-3:hover {
+    background-color: aliceblue;
+}
+
+/* 다음, 이전 버튼 */
+.btn-next {
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+}
+
+.next, .before {
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+    font-size: 15px;
+
+    margin: 0px 5px 0px 10px;
+    width: 50px;
+    height: 27px;
+    border: none;
+    background-color: rgb(223, 238, 251);
+    box-shadow: 1px 2px 1px rgb(172, 172, 172), 1px 1px 0px rgb(237, 237, 237);
+}
+
+.next:hover, .before:hover {
+    background-color: aliceblue;
+}
+
+

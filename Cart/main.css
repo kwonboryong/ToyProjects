@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    font-family: "Gowun Batang", serif;
+    background-color: rgb(235, 236, 236);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 92px;
+    background-color: #12500b;
+}
+
+h1 {
+    padding-left: 32px;
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    position: absolute; /* 가장 가까운 상위 요소기준으로 상하좌우 지정한 값만큼 떨어진 곳에 위치 */
+    padding-left: 290px;
+}
+
+span {
+    font-size: 21px;
+    padding: 14px;
+}
+
+a {text-decoration-line: none; color: white;}
+
+/* 검색칸 */
+input {
+    width: 150px;
+    height: 23px;
+    margin: 20px;
+}
+
+/* 카드 그룹 */
+.card {
+    display:flex;
+    justify-content:space-between;
+    width:96%;
+}
+
+/* 카드 개인 */
+.container {
+    display:flex;
+    flex-direction:column; 
+
+    width:200px;
+    gap:13px;
+    border:1px solid #ebeaec;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.3);
+    border-radius:16px;
+    padding:28px;
+    background-color: white;
+    margin-left: 40px;
+}
+
+.container:hover {
+    transform: scale(1.1);
+    transition: all 0.2s linear;
+}
+
+.top .title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 13px;
+}
+
+/* add to cart 버튼 */
+.cartBtn {
+    margin-top: 17px;
+    width: 100%;
+    height: 35px;
+
+    font-size: 15px;
+    color: white;
+    background-color: #12500b;
+    border: none;
+    border-radius: 6px;
+}
+
+.cartBtn:hover {
+    background-color: #26711e;
+}
+
+
+.hide {
+    display: none;
+}
+
+.highlight { 
+    background-color: yellow;
+}
+
+/* 장바구니 제목 */
+#cart-tag {
+    color: #051a02;
+    font-size: 33px;
+    font-weight: 600;
+    padding-top: 18px;
+    margin-left: 30px;
+}
+
+/* 장바구니 - 흰 박스 */
+.dragBox {
+    background-color: white;
+    margin: 35px 10px 10px 10px;
+    height: 600px;
+    position: relative;
+}
+
+/* 장바구니 - 녹색 박스 */
+.dropBox {
+    background-color: #072203;
+    width: 93%;
+    height: 460px;
+    
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cart - 상품 카드 수량 입력칸 */
+.quantity-input {
+
+    font-size: 15px;
+    margin-bottom: -6px;
+}
+
+
+/* 최종가격 - 흰 박스 */
+.priceBox {
+    background-color: white;
+    margin: 35px 10px 10px 10px;
+    height: 300px;
+    position: relative;
+}
+
+/* 최종가격 - 제목 */
+h4 {
+    color: #051a02;
+    font-size: 33px;
+    font-weight: 600;
+    padding-top: 18px;
+    margin-left: 30px;
+}
+
+/* 구매 버튼 */
+.buy {
+    margin-top: 50px;
+    margin-left: 120px;
+    width: 220px;
+    height: 46px;
+    
+    font-size: 19px;
+    color: white;
+    background-color: #12500b;
+    border-radius: 6px;
+    border:1px solid #a4a4a4;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.3);
+}
+
+.buy:hover {
+    background-color: #26711e;
+}
+
+/* 합계 */
+.final-price {
+    font-size: 23px;
+    margin-left: 130px;
+}
+
+
+/* footer */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    height: 50px;
+
+    a {color: #0b4c03;}
+}
+
+
+/* 모달창 - 검은 배경*/
+.modal1 {
+    width: 100%;
+    height: 750px;
+
+    position: fixed; /* 고정 위치 */
+    top: 50%; /* 화면 상단에서 절반 떨어진 위치 */
+    left: 50%; /* 화면 좌측에서 절반 떨어진 위치 */
+    transform: translate(-50%, -50%); /* 화면 중앙 정렬을 위한 위치 조정 */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    padding: 30px;
+    display: none;
+}
+
+/* 모달창 - 흰 배경*/
+.modal2 {
+    background: white;
+    border-radius: 5px;
+    padding: 30px;
+
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+/* 모달창 - 제목 */
+#m-title {
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+/* 모달창 - 성함, 연락처 */
+#modalText {
+    font-size: 20px;
+    margin-bottom: -7px;
+    padding-left: 160px;
+}
+
+/* 모달창 - 입력칸 */
+.m-input {
+    width: 150px;
+    height: 25px;
+    margin-left: 190px;
+}
+
+/* 모달창 - 버튼 */
+.modalBtn1 {
+    font-family: "Gowun Batang", serif;
+    font-weight: 600;
+    background-color: white;
+    
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    border:1px solid #ebeaec;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.3);
+    margin-top: 10px; 
+    margin-left: 185px;
+}
+
+.modalBtn1:hover {
+    background-color: #f1f1f1;
+}
+
+.modalBtn2 {
+    font-family: "Gowun Batang", serif;
+    font-weight: 600;
+    background-color: white;
+    
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 6px;
+    border:1px solid #ebeaec;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.3);
+    margin-top: 10px; 
+}
+
+.modalBtn2:hover {
+    background-color: #f1f1f1;
+}
+
+/* 모달창 기능 */
+.show-modal {
+    display: block;
+}
+
+
+/* 영수증 모달창 */
+#receiptModal {
+    background: white;
+    padding: 30px;
+
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+
+    display: none;
+    position: fixed; /* 고정 위치 */
+    top: 50%; /* 화면 상단에서 절반 떨어진 위치 */
+    left: 50%; /* 화면 좌측에서 절반 떨어진 위치 */
+    transform: translate(-50%, -50%); /* 화면 중앙 정렬을 위한 위치 조정 */
+    z-index: 9999; /* 다른 요소 위에 표시되도록 우선 순위 설정 */
+    border-radius: 10px; /* 모서리를 둥글게 만듦 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+}
+
+/* 영수증 - 제목 */
+#rctTitle {
+    margin-left: 50px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+/* 영수증 - canvas 내용 */
+#receiptCanvas {
+    margin-top: 20px;
+}
+
+/* 가격 내림차순 버튼 */
+.arrayBtn {
+    float: right;
+    margin-top: -15px;
+
+}
+
+#priceDown {
+    font-family: "Gowun Batang", serif;
+    margin-left: 40px;
+    width: 110px;
+    height: 40px;
+    
+    font-size: 14px;
+    color: white;
+    background-color: #12500b;
+    border-radius: 6px;
+    border:1px solid #a4a4a4;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.3);
+}
+#priceDown:hover {
+    background-color: #26711e;
+}
+
+/* 2만원 이하 정렬 버튼 */
+#down-2 {
+    font-family: "Gowun Batang", serif;
+    margin-left: 10px;
+    margin-right: 42px;
+    margin-bottom: 25px;
+    width: 110px;
+    height: 40px;
+
+    font-size: 14px;
+    color: white;
+    background-color: #12500b;
+    border-radius: 6px;
+    border:1px solid #a4a4a4;
+    box-shadow:0px 2px 4px rgba(0,0,0,0.3);
+
+}
+#down-2:hover {
+    background-color: #26711e;
+}

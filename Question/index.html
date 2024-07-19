@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<!-- 1. 버튼 html, css 생성
+2. 버튼 누르면 서브 메뉴 열리게 구현 (js)
+- 버튼 누르면 서브 메뉴 열고 닫히게 토글 생성
+- 서브 메뉴가 열려있으면 (if(max-height)) 서브메뉴 닫기 (max-height == null)
+- (else) 닫혀있으면 (max-height + "px")
+- css - transition에 시간 설정 -->
+
+<body style="background-color: hsl(210, 36%, 96%)">
+
+    <div id="question">
+        <p>Questions</p>
+    </div>
+
+    <div class="container">
+        <button type="button" class="btn">Do You Accept All Major Credit Cards?</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+    </div>
+    <div class="container2">
+        <button type="button" class="btn">Do You Suppport Local Farmers?</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div class="container3">
+        <button type="button" class="btn">Do You Use Organic Ingredients?</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit ametLorLorem ipsum dolor sit ametem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+        </div>
+    </div>
+    <script src="main.js">
+    </script>
+</body>
+</html>

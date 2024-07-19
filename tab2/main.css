@@ -1,0 +1,66 @@
+* { 
+    font-family: "Gowun Dodum", sans-serif;
+    margin:10; 
+    padding:0;
+}
+
+/* 전체 구조 */
+.wrap {
+    padding:15px; 
+    letter-spacing:-0.5px;
+}
+
+/* 순서 없는 목록의 아이콘 제거 */
+ul {
+    list-style:none;
+}
+
+/* 버튼 */
+a {
+    font-size: 20px;
+    color:#0c0c0c;
+    text-decoration:none; 
+    width:100%;
+    padding: 10px;
+    
+}
+
+.tab_menu {
+    position: relative;
+}
+
+.tab_menu .list {
+    overflow:hidden;
+}
+
+.tab_menu .list li {
+    float:left;
+    margin-right:14px;
+}
+
+/* 컨텐츠 상자 */
+.cont {
+    display:none; 
+    background:#e8d5d5; 
+    color:#282828; 
+    font-size: 17px;
+    text-align:center; 
+
+    position:absolute; 
+    margin-top: 10px;
+    top:25px; 
+    left:0; 
+    width:100%; 
+    height:100px; 
+    line-height:100px;
+}
+
+/* 선택(is_on)되었을 때 디자인 */
+.is_on .btn {
+    font-weight:bold; 
+    color:rgb(215, 108, 8);
+}
+
+.is_on .cont {
+    display:block;
+}
