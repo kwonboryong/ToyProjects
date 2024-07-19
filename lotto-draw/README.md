@@ -43,8 +43,7 @@
 - 다 만들고 나서 1등에 당첨된 컷을 찍고 싶었는데 1등 당첨 샷을 찍는게 실제 로또에 당첨될 확률(0.0000122%)이라는 걸 잊어버렸다. <br/>
 미당첨 사진밖에 없는게 아쉽다...내 (가짜) 4억...
 
-
-https://github.com/user-attachments/assets/521c32c3-69d9-49eb-8669-df535e3ab3c4
+https://github.com/user-attachments/assets/9d6ed315-3d44-4648-9833-d0bf348a6f56
 
 <br/><br/>
 
@@ -57,7 +56,7 @@ https://github.com/user-attachments/assets/521c32c3-69d9-49eb-8669-df535e3ab3c4
 
 #### 자바스크립트 
 ✅ DOM 조작으로 요소 생성해서 사용해보기 <br/>
-✅ 키보드로 조작 가능하게 만들기 <br/>
+✅ 키보드로 조작 가능하게 만들기! <br/>
 ✅ 유효성 검사 꼼꼼하게 하기 <br/>
 ✅ 복잡한 로직을 단계로 나누어 구현해보기
 
