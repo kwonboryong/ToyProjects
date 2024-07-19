@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>로또 추첨기</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Myeongjo&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js"></script>
+</head>
+<body>
+  <main>
+    <h2>로또 추첨기</h2>
+
+    <div class="qr">
+      <img src="./style/qr.png" alt="QR Code" />
+    </div>
+
+    <form class="input" id="form">
+      <span>로또 숫자를 입력하세요</span>
+      <div class="input-box">
+        <label for="lotto1" class="sr-only">로또 번호 1:</label>
+        <input type="text" id="lotto1" maxlength="2" />
+        <label for="lotto2" class="sr-only">로또 번호 2:</label>
+        <input type="text" id="lotto2" maxlength="2" />
+        <label for="lotto3" class="sr-only">로또 번호 3:</label>
+        <input type="text" id="lotto3" maxlength="2" />
+        <label for="lotto4" class="sr-only">로또 번호 4:</label>
+        <input type="text" id="lotto4" maxlength="2" />
+        <label for="lotto5" class="sr-only">로또 번호 5:</label>
+        <input type="text" id="lotto5" maxlength="2" />
+        <label for="lotto6" class="sr-only">로또 번호 6:</label>
+        <input type="text" id="lotto6" maxlength="2"/>
+      </div>
+      <button>추첨</button>
+    </form>
+    
+    <div class="result sr-only">
+      <div class="result-text">
+        <div class="result-ranking"><span id="rank">1</span>입니다!</div>
+        <div class="date"></div>
+        <div class="price-box">금액: <span class="price">1000</span>원</div>
+      </div>
+
+      <div class="result-title">당첨 숫자</div>
+      <div class="num-box" id="result">
+        <!-- 당첨 공 -->
+      </div>
+    </div>
+
+    <div class="qr2">
+      <img src="./style/qr2.png" alt="QR Code" />
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  user-select: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.calculator {
+  display: flex;
+  justify-content: center;
+
+  .calculator__box {
+    width: 24rem;
+    height: 31rem;
+    background-color: #a7a49ef2;
+    border-radius: 15px;
+    margin-top: 6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    #result {
+      width: 18rem;
+      height: 3.5rem;
+      font-family: "DotGothic16", sans-serif;
+      font-size: 3rem;
+      text-align: end;
+
+      margin-bottom: 2rem;
+      background-color: #6f827ae6;
+      border-radius: 3px;
+      box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.4);
+
+      /* 고민 */
+      border: 16px solid black;
+    }
+
+    button {
+      width: 4rem;
+      height: 4rem;
+      color: white;
+      background-color: #100906;
+
+      font-size: 1.9rem;
+      font-weight: 600;
+      margin-right: 5px;
+      margin-bottom: 6px;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: #cdcdd925;
+      }
+    }
+
+    #clear {
+      background-color: #a40419;
+
+      &:hover {
+        background-color: #ff2845b8;
+      }
+    }
+
+    #plus,
+    #minus,
+    #multiply,
+    #divide {
+      background-color: #242563;
+
+      &:hover {
+        background-color: #4952f5a1;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>끝말잇기</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="box">
+        <h2 class="header">끝말잇기</h2>
+
+        <!-- 시작 화면 -->
+        <div id="button-start-box">
+          <button id="button-start">시작</button>
+        </div>
+
+        <!-- 2번째 화면 -->
+        <div id="game-ready" class="hidden">
+          <div>
+            <label for="participant-number">몇 명이 참가합니까?</label>
+            <input id="participant-number" type="number" aria-required="true" />
+
+            <button id="button-ready">참가</button>
+          </div>
+        </div>
+
+        <!-- 3번 째 화면 -->
+        <div id="game-box" class="hidden">
+          <div><span id="order">1</span>번째 참가자</div>
+          <div>제시어: <span id="current-word"></span></div>
+
+          <label for="user-input" class="sr-only">단어 입력</label>
+          <input id="user-input" type="text" placeholder="단어를 입력하세요" aria-required="true" />
+
+          <div class="button-box">
+            <button id="button-reset">리셋</button>
+            <button id="button-submit">제출</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
