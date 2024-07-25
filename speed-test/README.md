@@ -34,6 +34,6 @@ https://github.com/user-attachments/assets/16ec1350-244b-481d-86d8-8594a7c93d27
 
 ## 순서도💻
 
-![반응 속도 테스트 순서도](https://github.com/user-attachments/assets/88e943c1-986b-4450-931d-72e46822855e)
+![반응 속도 테스트 순서도](https://github.com/user-attachments/assets/95d5db9a-9b8d-41b1-8235-4bf7759bc8fb)
 
 <br/><br/><br/>
