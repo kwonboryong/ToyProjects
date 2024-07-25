@@ -1,4 +1,3 @@
-<br/>
 
 # Toy-project🕹
 - 웹 페이지의 마크업과 스타일링을 연습하고, 자바스크립트 실력을 향상시키기 위한 개인 학습 프로젝트
@@ -17,8 +16,7 @@
 ### 02. [영화 소개 페이지](https://github.com/kwonboryong/ToyProjects/tree/main/movie_page)
 ### 03. [계산기](https://github.com/kwonboryong/ToyProjects/tree/main/calculator)
 ### 04. [로또 추첨](https://github.com/kwonboryong/ToyProjects/tree/main/lotto-draw)
-
-
+### 04. [반응 속도 테스트](https://github.com/kwonboryong/ToyProjects/blob/main/speed-test)
 
 
 
